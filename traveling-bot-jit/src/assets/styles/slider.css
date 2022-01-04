@@ -1,0 +1,24 @@
+.Slider {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  /* class="sc-bdvvtL jRFJkP rec rec-arrow rec rec-arrow-left" */
+  .controls-wrapper {
+    width: 100%;
+  }
+  
+  .carousel-wrapper {
+    width: 100%;
+  }
+  
+  .rec-carousel-item:focus {
+    outline: none;
+    box-shadow: inset 0 0 1px 0px #0080FF;
+  }
+  .rec.rec-arrow {
+    display: none;
+  }
