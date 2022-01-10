@@ -10,7 +10,7 @@ import BG_VIDEO from "../assets/videos/BG_VIDEO.mp4";
 const LandingPage=()=>{
     return<>
         <div className="975px:h-[30rem] 1296px:h-[40rem] 1550px:h-[45rem] h-[50rem] w-full relative rounded-md -z-10">
-            <video autoPlay muted loop className="h-full w-full object-cover">
+            <video autoPlay muted loop className="h-full w-full object-cover ">
                 <source src={BG_VIDEO} typpe="video/mp4"/>
             </video>
             <div className="925px:h-[18rem] 975px:h-[20rem] 1132px:h-[23rem] 1296px:h-[25rem]  1390px:h-[26.5rem] h-[28rem] 1296px:w-8/12 w-7/12 mx-auto centerdiv flex justify-between bg-[#ffffff36] 925px:p-2 1024px:px-[3rem] px-[5rem]  1024px:py-2 py-4">

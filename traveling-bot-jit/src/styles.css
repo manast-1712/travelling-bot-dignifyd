@@ -16,3 +16,6 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.ratingClip{
+    clip-path: polygon(0 0, 70% 0%, 100% 0, 100% 90%, 13% 90%, 13% 100%, 0 91%, 0% 30%);
+}

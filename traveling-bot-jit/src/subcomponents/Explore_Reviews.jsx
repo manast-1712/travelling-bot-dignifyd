@@ -37,7 +37,7 @@ const Explore_Reviews=()=>{
                 <div className="w-full h-auto grid grid-cols-12 gap-2">
                     {
                         arr.map((v,i)=>{
-                            return<div key={i} className={` ${i < currCount ? "flex flex-col":"hidden"} justify-between 1132px:col-span-6 col-span-4 1400px:h-44 1450px:h-48 h-52 rounded-sm relative shadow-Inputprime p-4 bg-proGray-200 rounded-md`}>
+                            return<div key={i} className={` ${i < currCount ? "flex flex-col":"hidden"} justify-between 1132px:col-span-6 col-span-4 1400px:h-44 1450px:h-48 h-52 rounded-md relative shadow-Inputprime p-4 flex justify-between bg-backGray items-center rounded-md shadow-prime1`}>
                                 <div className="h-16 w-full flex justify-between items-center">
                                         <img src={arr[i].img} alt="rimg" className="h-10 w-12 object-cover rounded-full"/>
                                         <div className="h-full w-full flex flex-col justify-center items-start ml-2">

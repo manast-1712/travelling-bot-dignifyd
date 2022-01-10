@@ -43,7 +43,7 @@ router.post('/login',async (req,res) => {
         const {email,password} = req.body;
         if(!email || !password){
             //this message will be sent to frontend
-            return res.status(400).json({error:"fill all the fields"});
+            return res.status(400).json({error:"Fill all the fields"});
         }
 
         //searching whether user is registered or not

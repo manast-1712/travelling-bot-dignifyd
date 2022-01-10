@@ -44,14 +44,17 @@ const PlanStaycations=()=>{
             <Carousel breakPoints={breakPoints} autoPlaySpeed={2000} ref={carousel} itemPadding={[0, 5]} >
               {
                 arr.map((v,i)=>{
-                    return<div key={i} className="w-96 h-auto object-fill bg-proGray-200 flex flex-col rounded-sm">
-                        <img src={arr[i].img} alt="top destinations" className="w-full h-[14rem] object-cover rounded-t-sm"/>
-                        <div className="h-[3rem] w-full px-2">
-                            <div className="w-full h-auto flex items-center my-2 px-2">
-                                <div className="w-1/2 flex truncate pr-2 justify-start items-end text-darkBlue font-bold">{arr[i].title}</div>
-                                <div className="w-1/2 flex justify-end items-end"><span className="text-bold text-darkBlue mr-1 flex">
-                                    <IconContext.Provider value={{ className:"h-5 w-5 text-darkBlue"}}><BiRupee/></IconContext.Provider>
-                                    {arr[i].price}</span><span className="truncate text-sm text-LightBlack font-poppins">onwards</span>
+                    return<div key={i} className="w-96 h-auto object-fill flex flex-col rounded-md bg-backGray shadow-prime1 my-2">
+                        <img src={arr[i].img} alt="top destinations" className="w-full h-[14rem] object-cover rounded-t-md"/>
+                        <div className="h-auto w-full px-2 py-4 flex justify-between items-center">
+                            <div className="w-full h-auto flex items-center px-2">
+                                <div className="w-1/2 flex truncate pr-2 justify-start items-end text-lg text-darkBlue font-extrabold">{arr[i].title}</div>
+                                <div className="w-1/2 flex justify-end items-end font-extrabold">
+                                  <span className="text-darkBlue mr-1 flex">
+                                    <IconContext.Provider value={{ className:"h-5 w-5 text-darkBlue text-bold "}}><BiRupee/></IconContext.Provider>
+                                    {arr[i].price}
+                                    </span>
+                                    <span className="truncate text-sm text-[#a8a8a8] font-semibold">onwards</span>
                                 </div>
                             </div>
                         </div>

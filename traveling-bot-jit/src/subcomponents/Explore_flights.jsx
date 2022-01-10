@@ -75,21 +75,21 @@ const Explore_flights=()=>{
             <Carousel breakPoints={breakPoints} autoPlaySpeed={2000} ref={carousel} itemPadding={[0, 5]} >
               {
                 arr.map((v,i)=>{
-                    return<div key={i} className="w-96 h-auto object-fill bg-proGray-200 flex flex-col rounded-md">
-                        <img src={arr[i].img} alt="top destinations" className="w-full h-[10rem] bg-green-400 object-cover rounded-t-md"/>
-                        <div className="h-[11rem] w-full px-2 bg-proGray-200 rounded-md p-2">
-                            <div className="w-full text-darkBlue font-bold mb-2">{arr[i].name}</div>
-                            <div className="w-full h-[6.7rem] grid grid-cols-6 gap-2">
-                                <img alt="img" src={arr[i].flightImg} className="col-span-1 h-10 w-10 mx-auto object-cover"/>
-                                <div className="col-span-3 flex flex-col"><span className="text-[1rem] text-darkBlue">Tue, 18 Jan</span><span className="text-[0.7rem] text-LightBlack">Delhi-{arr[i].name}</span></div>
+                    return<div key={i} className="h-full w-full object-fill flex flex-col shadow-prime1 bg-backGray my-2 rounded-md">
+                        <img src={arr[i].img} alt="top destinations" className="w-full h-[14rem] object-cover rounded-t-md"/>
+                        <div className="h-[10.4rem] w-full rounded-b-md p-2">
+                            <div className="w-full text-darkBlue font-bold text-xl mb-2">{arr[i].name}</div>
+                            <div className="w-full h-[6rem] grid grid-cols-6 gap-2 pr-2">
+                                <img alt="img" src={arr[i].flightImg} className="col-span-1 h-8 w-8 mx-auto object-cover"/>
+                                <div className="col-span-3 flex flex-col"><span className="text-[1rem] text-[#171717] font-semibold">Tue, 18 Jan</span><span className="text-[0.7rem] ">Delhi-{arr[i].name}</span></div>
                                 <div className="col-span-2 text-0.7rem font-poppins flex justify-end items-start">{arr[i].flightname}</div>
-                                <img alt="img" src={arr[i].flightImg} className="col-span-1  h-10 w-10 mx-auto object-cover"/>
-                                <div className="col-span-3 flex flex-col"><span className="text-[1rem] text-darkBlue">Tue, 18 Jan</span><span className="text-[0.7rem] text-LightBlack">Delhi-{arr[i].name}</span></div>
+                                <img alt="img" src={arr[i].flightImg} className="col-span-1  h-8 w-8 mx-auto object-cover"/>
+                                <div className="col-span-3 flex flex-col"><span className="text-[1rem] text-[#171717]  font-semibold">Tue, 18 Jan</span><span className="text-[0.7rem] ">Delhi-{arr[i].name}</span></div>
                                 <div className="col-span-2 text-0.7rem font-poppins flex justify-end items-start">{arr[i].flightname}</div>
                             </div>
-                            <div className="w-full h-5 flex justify-end items-end mb-2">
-                                <span className="text-sm text-LightBlack mr-1">starting from</span>
-                                <span className="text-bold text-darkBlue mr-1 flex">
+                            <div className="w-full h-5 flex justify-end items-end mb-3 pl-2">
+                                <span className="text-sm text-[#a8a8a8] font-semibold mr-1">starting from</span>
+                                <span className="font-extrabold text-darkBlue flex font-bold text-lg justify-end items-center">
                                     <IconContext.Provider value={{ className:"h-5 w-5 text-darkBlue"}}><BiRupee/></IconContext.Provider>
                                     {arr[i].price}
                                 </span>

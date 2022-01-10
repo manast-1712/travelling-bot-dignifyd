@@ -11,6 +11,7 @@ module.exports = {
       colors:{
         skyBlue:"#0080FF",
         darkBlue:"#00264D",
+        backGray:"#f7f7f7",
         proGray:{
           100:"#F1F5F9", 
           200:"#E3EBF3",
@@ -193,6 +194,8 @@ module.exports = {
         '37':'37',
         '55':'55',
         '57':'57',
+        '58':'58',
+        '59':'59',
         '60':'60',
         '61':'61',
         '62':'62',
